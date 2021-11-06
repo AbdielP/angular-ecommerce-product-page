@@ -1,12 +1,25 @@
-mat-sidenav-container {
+@import '../../public/general.css';
+
+.mat-sidenav-container {
     height: 100vh;
 }
 
-mat-sidenav, mat-sidenav-content {
+.sidenav {
     padding: 16px;
+    background-color: var(--color-white);
+    width: 250px;
 }
 
-mat-sidenav {
-    background: coral;
-    width: 200px;
+.sidenav__button {
+    border: none;
+    background: none;
+}
+
+.sidenav__list {
+    list-style-type: none;
+}
+
+.sidenav__list-item {
+    font-size: 1rem;
+    font-weight: 700;
 }
