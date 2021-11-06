@@ -1,13 +1,14 @@
-<mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSidenav(toggle = true)">
-      <img src="/assets/icon-menu.svg" alt="menu">
-    </button>
-    <img src="/assets/logo.svg" alt="logo">
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <img src="/assets/icon-cart.svg" alt="cart">
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <img class="img__avatar" src="/assets/image-avatar.png" alt="">
-    </button>
-  </mat-toolbar>
+<mat-toolbar class="toolbar">
+  <button mat-icon-button aria-label="menu"
+    (click)="toggleSidenav(toggle = true)">
+    <img src="/assets/icon-menu.svg" alt="menu">
+  </button>
+  <img src="/assets/logo.svg" alt="logo">
+  <span class="spacer"></span>
+  <button mat-icon-button class="toolbar__cart" aria-label="logo">
+    <img src="/assets/icon-cart.svg" alt="cart">
+  </button>
+  <button mat-icon-button aria-label="avatar">
+    <img class="img__avatar" src="/assets/image-avatar.png" alt="avatar">
+  </button>
+</mat-toolbar>

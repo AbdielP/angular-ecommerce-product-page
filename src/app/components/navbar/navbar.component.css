@@ -1,7 +1,14 @@
-.example-spacer {
+.toolbar {
+    height: 70px;
+}
+.spacer {
     flex: 1 1 auto;
 }
 
 .img__avatar {
-    width: 35px;
+    width: 24px;
+}
+
+.toolbar__cart {
+    margin-right: 5px;
 }

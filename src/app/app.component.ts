@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-ecommerce-product-page';
-  toggle_sidenav: boolean = true;
+  toggle_sidenav: boolean = false;
 
   toggleSidenav(toggle: boolean): void {
     this.toggle_sidenav = toggle;
