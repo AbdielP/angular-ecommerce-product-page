@@ -1,10 +1,10 @@
 <mat-sidenav-container>
-  <mat-sidenav opened>
-      Sidenav content
+  <mat-sidenav [(opened)]="toggle_sidenav">
+      <button type="button" (click)="toggle_sidenav = false">x</button>
   </mat-sidenav>
 
   <mat-sidenav-content>
-      <app-navbar></app-navbar>
+      <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
       <app-gallery></app-gallery>
       <app-description></app-description>
   </mat-sidenav-content>
