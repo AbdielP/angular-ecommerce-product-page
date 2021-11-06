@@ -5,7 +5,7 @@
 }
 
 .sidenav {
-    padding: 16px;
+    padding: 20px;
     background-color: var(--color-white);
     width: 250px;
 }
@@ -17,9 +17,11 @@
 
 .sidenav__list {
     list-style-type: none;
+    margin-top: 45px;
 }
 
 .sidenav__list-item {
-    font-size: 1rem;
+    margin: 25px 0;
+    font-size: 1.1rem;
     font-weight: 700;
 }
