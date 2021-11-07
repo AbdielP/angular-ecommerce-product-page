@@ -42,3 +42,7 @@ html, body {
 .display-flex {
     display: flex;
 }
+
+.color-dark-blue {
+    color: var(--color-very-dark-blue);
+}

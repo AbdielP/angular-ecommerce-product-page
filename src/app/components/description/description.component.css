@@ -11,7 +11,6 @@
 }
 
 .subtitle {
-    color: var(--color-very-dark-blue);
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -21,4 +20,32 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 1.7;
+}
+
+.main__price-container {
+    align-items: center;
+}.main__price-container--mt {
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.main__price {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.main__badge {
+    font-weight: 700;
+    padding: 3px 6px;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: var(--color-orange);
+    background-color: var(--color-pale-orange);
+}
+
+.main__price-before {
+    color: var(--color-grayish-blue);
+    font-size: 1.1rem;
+    text-decoration: line-through;
 }
