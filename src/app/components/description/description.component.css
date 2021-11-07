@@ -49,3 +49,13 @@
     font-size: 1.1rem;
     text-decoration: line-through;
 }
+
+.cart-container {
+    flex-direction: column;
+}
+
+.cart-container__btn {
+    border: none;
+    background: var(--color-light-grayish-blue);
+    padding: 20px;
+}
