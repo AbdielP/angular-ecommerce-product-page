@@ -1,4 +1,4 @@
-<mat-sidenav-container class="mat-sidenav-container">
+<mat-sidenav-container class="sidenav__container">
   <mat-sidenav class="sidenav" [(opened)]="toggle_sidenav">
       <button type="button" class="sidenav__button cursor-pointer" (click)="toggle_sidenav = false">
         <img src="/assets/icon-close.svg" alt="x">
@@ -12,7 +12,8 @@
       </ul>
   </mat-sidenav>
 
-  <mat-sidenav-content class="mat-sidenav-content">
+  <mat-sidenav-content class="sidenav__content grid"> 
+    <!-- CONTINUE: Building grid -->
       <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
       <app-gallery></app-gallery>
       <app-description></app-description>
