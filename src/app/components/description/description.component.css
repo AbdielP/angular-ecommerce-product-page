@@ -1,0 +1,24 @@
+.main {
+    padding: 15px 25px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--color-orange);
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.subtitle {
+    color: var(--color-very-dark-blue);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.main__paragraph {
+    color: var(--color-dark-grayish-blue);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+}
