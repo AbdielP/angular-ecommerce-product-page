@@ -25,3 +25,15 @@
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media (min-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
