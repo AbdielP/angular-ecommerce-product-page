@@ -13,3 +13,24 @@ html, body { height: 100%;
 .cursor-pointer {
     cursor: pointer;
 }
+
+.gallery__button {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    top: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+    background-color: var(--color-white);
+}.gallery__button--left {
+    background-image: url('./assets/icon-previous.svg');
+    right: 85%;
+
+}.gallery__button--right {
+    background-image: url('./assets/icon-next.svg');
+    left: 85%;
+}
+ 
