@@ -32,6 +32,13 @@
     grid-template-columns: auto;
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { 
+    font-size: 12px;
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
 @media (min-width: 1100px) {
     .grid {
         grid-template-columns: 1fr 1fr;
