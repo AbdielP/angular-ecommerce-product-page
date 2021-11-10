@@ -10,7 +10,6 @@ export class GalleryComponent implements OnInit {
 
   gallery: Array<any> = [];
   currentImage: string = '';
-  currentThumb: string = '';
   currentIndex: number = 0;
 
   constructor(private galleryService: GalleryService) { }
@@ -26,6 +25,7 @@ export class GalleryComponent implements OnInit {
       this.currentIndex++;
       let nextImage = this.gallery[this.currentIndex].img;
       this.currentImage = nextImage;
+      this
     } else {
       this.currentIndex = 0;
       this.currentImage = this.gallery[0].img;
