@@ -10,24 +10,31 @@ export class GalleryComponent implements OnInit {
 
   gallery: Array<any> = [];
   currentImage: string = '';
+  actualIndex: number = 0;
 
   constructor(private galleryService: GalleryService) { 
     this.gallery = this.galleryService.getGallery();
     this.currentImage = this.gallery[0].img;
-    // console.log(this.gallery);
   }
 
   ngOnInit(): void {
   }
 
   galleryForward(): void {
-    console.log(this.galleryService.galleryForward())
-    // this.currentImage = this.galleryService.galleryForward().img;
+    if (this.actualIndex < this.gallery.length -1) {
+      this.actualIndex++;
+      this.currentImage = this.gallery[this.actualIndex].img;
+    } else {
+      this.actualIndex = 0;
+      this.currentImage = this.gallery[0].img; 
+    }
   }
 
   galleryBackward(): void {
-    console.log(this.galleryService.galleryBackward())
-    // this.currentImage = this.galleryService.galleryBackward().img;
+    if (this.actualIndex > 0) {
+      this.actualIndex--;
+      this.currentImage = this.gallery[this.actualIndex].img;
+    }
   }
 
 }
