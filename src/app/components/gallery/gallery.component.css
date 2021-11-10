@@ -11,6 +11,19 @@
     object-fit: cover;
 }
 
+.thumbnails {
+    display: none   ;
+}
+
 @media (min-width: 550px) {
-    
+
+    .thumbnails {
+        display: flex;
+        justify-content: center;
+    }
+    .thumbnail {
+        border-radius: 10px;
+        width: 90px;
+        margin: 15px;
+    }
 }
