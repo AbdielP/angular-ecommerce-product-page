@@ -14,14 +14,20 @@ export class GalleryComponent implements OnInit {
   constructor(private galleryService: GalleryService) { 
     this.gallery = this.galleryService.getGallery();
     this.currentImage = this.gallery[0].img;
-    console.log(this.gallery);
+    // console.log(this.gallery);
   }
 
   ngOnInit(): void {
   }
 
-  test(): void {
-    
+  galleryForward(): void {
+    console.log(this.galleryService.galleryForward())
+    // this.currentImage = this.galleryService.galleryForward().img;
+  }
+
+  galleryBackward(): void {
+    console.log(this.galleryService.galleryBackward())
+    // this.currentImage = this.galleryService.galleryBackward().img;
   }
 
 }

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GalleryService {
 
-  // counter: number = 0;
+  imgIndex: number = 1;
 
   gallery: Array<Object> = [
     { 'img': '/assets/image-product-1.jpg', 'thumb': '/assets/image-product-1-thumbnail.jpg' },
@@ -18,8 +18,24 @@ export class GalleryService {
     return this.gallery;
   }
 
-  test(index: number): any {
-    return  this.gallery[index];
+  galleryForward(): any {
+    // return this.imgIndex = this.imgIndex+1;
+    let nextImage = this.gallery[this.imgIndex];
+    if(this.imgIndex < this.gallery.length -1) {
+      this.imgIndex = this.imgIndex+1
+    } else {
+      this.imgIndex = 0;
+    }
+    return nextImage;
+  }
+
+  galleryBackward(): any {
+    if (this.imgIndex > 1) {
+      this.imgIndex = this.imgIndex -1;
+      let prevImage = this.gallery[this.imgIndex];
+      return prevImage;
+    }
+    // return this.imgIndex = this.imgIndex-1;
   }
 
   // test(): any {
