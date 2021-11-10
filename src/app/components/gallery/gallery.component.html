@@ -1,5 +1,5 @@
 <section class="gallery">
-    <img class="gallery__img" [src]="currentImage" alt="sneakers">
+    <img class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
     <button class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
     <button class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
     <div class="thumbnails">
