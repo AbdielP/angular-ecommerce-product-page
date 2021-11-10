@@ -1,5 +1,5 @@
 <section class="gallery">
-    <img class="gallery__img" src="/assets/image-product-1.jpg" alt="sneakers">
-    <button class="gallery__button gallery__button--left" type="button"></button>
-    <button class="gallery__button gallery__button--right" type="button"></button>
+    <img class="gallery__img" [src]="actualImage" alt="sneakers">
+    <button class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
+    <button class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
 </section>
