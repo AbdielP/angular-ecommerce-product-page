@@ -1,3 +1,8 @@
 <div class="gallery">
-    <img class="gallery__img" [src]="currentImage" alt="sneakers" >
+    <img #mainImg class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
+    <button class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
+    <button class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
+    <div class="thumbnails">
+        <img *ngFor="let img of gallery" class="thumbnail" [src]="img.thumb" alt="">
+    </div>
 </div>
