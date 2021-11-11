@@ -27,4 +27,8 @@
         width: 90px;
         margin: 15px;
     }
+
+    .gallery__image--active {
+        border: 2px solid var(--color-orange)
+    }
 }

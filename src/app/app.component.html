@@ -16,7 +16,7 @@
     <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
     <div class="grid">
       <div class="gallery">
-        <app-gallery ></app-gallery>
+        <app-gallery [callLightbox]="callLightbox"></app-gallery>
       </div>
       <app-description></app-description>
     </div>
