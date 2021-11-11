@@ -12,35 +12,34 @@ export class GalleryComponent {
 
   gallery: Array<any> = [];
   currentImage: string = '';
-  actualIndex: number = 0;
+  currentIndex: number = 0;
 
   constructor(private galleryService: GalleryService, public dialog: MatDialog) { 
     this.gallery = this.galleryService.getGallery();
     this.currentImage = this.gallery[0].img;
-    this.openDialog();
+    // this.openDialog();
   }
 
   galleryForward(): void {
-    if (this.actualIndex < this.gallery.length -1) {
-      this.actualIndex++;
-      this.currentImage = this.gallery[this.actualIndex].img;
+    if (this.currentIndex < this.gallery.length -1) {
+      this.currentIndex++;
+      this.currentImage = this.gallery[this.currentIndex].img;
     } else {
-      this.actualIndex = 0;
+      this.currentIndex = 0;
       this.currentImage = this.gallery[0].img; 
     }
   }
 
   galleryBackward(): void {
-    if (this.actualIndex > 0) {
-      this.actualIndex--;
-      this.currentImage = this.gallery[this.actualIndex].img;
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.currentImage = this.gallery[this.currentIndex].img;
     }
   }
 
   openDialog() {
     const dialogRef = this.dialog.open(LightboxComponent, {
-      data: { gallery: this.gallery },
-      panelClass: 'bro'
+      data: { gallery: this.gallery }
     });
 
     // dialogRef.afterClosed().subscribe(result => {});

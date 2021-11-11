@@ -22,8 +22,21 @@ export class LightboxComponent {
     this.currentImage = this.gallery[index].img;
   }
 
-  galleryBackward(): void{}
+  galleryForward(): void {
+    if (this.currentIndex < this.gallery.length -1) {
+      this.currentIndex++;
+      this.currentImage = this.gallery[this.currentIndex].img;
+    } else {
+      this.currentIndex = 0;
+      this.currentImage = this.gallery[0].img; 
+    }
+  }
 
-  galleryForward(): void{}
+  galleryBackward(): void {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.currentImage = this.gallery[this.currentIndex].img;
+    }
+  }
 
 }
