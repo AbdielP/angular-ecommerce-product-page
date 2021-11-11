@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, Output } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -8,35 +8,37 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class LightboxComponent {
 
-  gallery: Array<any> = [];
-  currentImage: string = '';
-  currentIndex: number = 0;
+  @Output() callLightbox: boolean = false;
+
+  // gallery: Array<any> = [];
+  // currentImage: string = '';
+  // currentIndex: number = 0;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { 
-    this.gallery = data.gallery;
-    this.currentImage = data.gallery[0].img;
+    // this.gallery = data.gallery;
+    // this.currentImage = data.gallery[0].img;
   }
 
-  getImage(index: number): void {
-    this.currentIndex = index;
-    this.currentImage = this.gallery[index].img;
-  }
+  // getImage(index: number): void {
+  //   this.currentIndex = index;
+  //   this.currentImage = this.gallery[index].img;
+  // }
 
-  galleryForward(): void {
-    if (this.currentIndex < this.gallery.length -1) {
-      this.currentIndex++;
-      this.currentImage = this.gallery[this.currentIndex].img;
-    } else {
-      this.currentIndex = 0;
-      this.currentImage = this.gallery[0].img; 
-    }
-  }
+  // galleryForward(): void {
+  //   if (this.currentIndex < this.gallery.length -1) {
+  //     this.currentIndex++;
+  //     this.currentImage = this.gallery[this.currentIndex].img;
+  //   } else {
+  //     this.currentIndex = 0;
+  //     this.currentImage = this.gallery[0].img; 
+  //   }
+  // }
 
-  galleryBackward(): void {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      this.currentImage = this.gallery[this.currentIndex].img;
-    }
-  }
+  // galleryBackward(): void {
+  //   if (this.currentIndex > 0) {
+  //     this.currentIndex--;
+  //     this.currentImage = this.gallery[this.currentIndex].img;
+  //   }
+  // }
 
 }
