@@ -17,6 +17,7 @@ export class GalleryComponent {
   constructor(private galleryService: GalleryService, public dialog: MatDialog) { 
     this.gallery = this.galleryService.getGallery();
     this.currentImage = this.gallery[0].img;
+    this.openDialog();
   }
 
   galleryForward(): void {
@@ -38,7 +39,8 @@ export class GalleryComponent {
 
   openDialog() {
     const dialogRef = this.dialog.open(LightboxComponent, {
-      data: { gallery: this.gallery }
+      data: { gallery: this.gallery },
+      panelClass: 'bro'
     });
 
     // dialogRef.afterClosed().subscribe(result => {});

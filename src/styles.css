@@ -46,3 +46,14 @@ html, body {
 .color-dark-blue {
     color: var(--color-very-dark-blue);
 }
+
+
+#mat-dialog-0 {
+    background: none;
+    box-shadow: none;
+}
+
+/* mat-dialog-container.mat-dialog-container {
+    background: none;
+    box-shadow: none;
+} */
