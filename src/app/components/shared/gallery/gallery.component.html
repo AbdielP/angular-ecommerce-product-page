@@ -1,8 +1,9 @@
 <div class="gallery">
-    <img #mainImg class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
+    <img class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
     <button class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
     <button class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
-    <div class="thumbnails">
+    <!-- FAIL ENORME: No se como evitar que dispare el 'openDialog()' si está en tamaño cell...  -->
+    <div #thumbnails class="thumbnails">
         <img *ngFor="let img of gallery; let i = index" class="thumbnail" [class.gallery__image--active]="currentIndex == i" [src]="img.thumb" alt="img" (click)="getImage(i)">
     </div>
 </div>

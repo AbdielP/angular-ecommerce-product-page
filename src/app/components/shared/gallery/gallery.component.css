@@ -1,12 +1,15 @@
 .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    /* background: brown; */
+    background: brown;
     width: 100%;
     max-width: 550px;
 }
 
 .gallery__img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -14,6 +17,10 @@
 
 .thumbnails {
     display: none;
+}
+
+:host-context(.gallery__img--resize) .gallery__img {
+    width: 100%;
 }
 
 @media (min-width: 550px) {

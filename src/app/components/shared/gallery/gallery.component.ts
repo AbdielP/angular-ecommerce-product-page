@@ -10,7 +10,7 @@ import { LightboxComponent } from 'src/app/components/lightbox/lightbox.componen
 })
 export class GalleryComponent {
 
-  @ViewChild('mainImg', {static: false}) img: ElementRef;
+  @ViewChild('thumbnails', {static: false}) divthumbs: ElementRef;
   @Input() callLightbox: boolean;
 
   gallery: Array<any> = [];
@@ -50,7 +50,8 @@ export class GalleryComponent {
     // } 
     if( this.callLightbox ) {
       const dialogRef = this.dialog.open(LightboxComponent, {
-        data: { gallery: this.gallery }
+        data: { gallery: this.gallery },
+        panelClass: 'gallery__img--resize'
       });
     }
   }

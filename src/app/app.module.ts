@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { GalleryComponent } from './components/shared/gallery/gallery.component';
-// import { GalleryComponent } from './components/gallery/gallery.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
 
@@ -16,7 +15,6 @@ import { LightboxComponent } from './components/lightbox/lightbox.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    // GalleryComponent,
     GalleryComponent,
     DescriptionComponent,
     LightboxComponent

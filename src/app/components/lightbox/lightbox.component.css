@@ -5,31 +5,6 @@
     justify-content: center;
 }
 
-.gallery {
-    position: relative;
-}
-
-.gallery__img {
-    border-radius: 15px;
-    width: 500px;
-}
-
-.thumbnails {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.thumbnail {
-    border-radius: 10px;
-    width: 100px;
-    margin: 20px 10px;
-}
-
-.gallery__image--active {
-    border: 2px solid var(--color-orange)
-}
-
 .container__actions {
     width: 100%;
 }
