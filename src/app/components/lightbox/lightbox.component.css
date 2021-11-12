@@ -8,3 +8,9 @@
 .container__actions {
     width: 100%;
 }
+
+/* @media (min-width: 550px) {
+    .container {
+        display: flex;
+    }
+} */

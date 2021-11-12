@@ -1,6 +1,6 @@
 import { GalleryService } from 'src/app/services/gallery.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Component, Input, ElementRef, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LightboxComponent } from 'src/app/components/lightbox/lightbox.component';
 
 @Component({
@@ -10,16 +10,20 @@ import { LightboxComponent } from 'src/app/components/lightbox/lightbox.componen
 })
 export class GalleryComponent {
 
-  @ViewChild('thumbnails', {static: false}) divthumbs: ElementRef;
   @Input() callLightbox: boolean;
 
   gallery: Array<any> = [];
   currentImage: string = '';
   currentIndex: number = 0;
+  width: number;
 
   constructor(private galleryService: GalleryService, public dialog: MatDialog) { 
     this.gallery = this.galleryService.getGallery();
     this.currentImage = this.gallery[0].img;
+  }
+
+  ngAfterViewInit(): Number {
+    return window.innerWidth;
   }
 
   galleryBackward(): void {
@@ -45,11 +49,8 @@ export class GalleryComponent {
   }
 
   openDialog(): void {
-    // if( this.img.nativeElement.classList.contains('test') ) {
-    //   console.log('mostrar lightbox')
-    // } 
-    if( this.callLightbox ) {
-      const dialogRef = this.dialog.open(LightboxComponent, {
+    if( this.callLightbox && this.ngAfterViewInit() >= 550 ) {
+      this.dialog.open(LightboxComponent, {
         data: { gallery: this.gallery },
         panelClass: 'gallery__img--resize'
       });
