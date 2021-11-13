@@ -6,7 +6,12 @@
 }
 
 .container__actions {
-    width: 100%;
+    width: 80%;
+    /* background-color: tomato; */
+}
+
+.btn-close {
+    margin-bottom: 25px;
 }
 
 /* @media (min-width: 550px) {
