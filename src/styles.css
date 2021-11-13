@@ -55,7 +55,6 @@ html, body {
 mat-dialog-container.mat-dialog-container {
     background: none;
     box-shadow: none;
-    /* display: none; */
 }
 
 /* .cdk-overlay-dark-backdrop {
