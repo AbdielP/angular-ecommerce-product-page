@@ -1,5 +1,14 @@
 .main {
+    display: flex;
+    justify-content: center;
     padding: 20px 25px;
+    /* background: red; */
+    width: 100%;
+}
+
+.container {
+    /* background: gray; */
+    max-width: 550px;
 }
 
 .title {
@@ -91,4 +100,11 @@
 }.cart-button__img {
     margin-right: 15px;
     width: 18px;
+}
+
+@media (min-width: 875px) { 
+    .container {
+        /* background: gray; */
+        max-width: 900px;
+    }
 }
