@@ -3,16 +3,14 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    background: brown;
     width: 100%;
     max-width: 550px;
 }
 
 .gallery__img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
 }
 
 .thumbnails {
@@ -24,6 +22,11 @@
 }
 
 @media (min-width: 550px) {
+
+    .gallery__img {
+        width: 90%;
+        border-radius: 15px;
+    }
 
     .thumbnails {
         display: flex;

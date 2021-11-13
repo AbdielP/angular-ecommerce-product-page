@@ -1,6 +1,6 @@
 import { GalleryService } from 'src/app/services/gallery.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { LightboxComponent } from 'src/app/components/lightbox/lightbox.component';
 
 @Component({
@@ -22,8 +22,13 @@ export class GalleryComponent {
     this.currentImage = this.gallery[0].img;
   }
 
-  ngAfterViewInit(): Number {
-    return window.innerWidth;
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.width = event.target.innerWidth;
+  }
+
+  ngAfterViewInit(): void {
+    this.width = window.innerWidth;
   }
 
   galleryBackward(): void {
@@ -49,7 +54,7 @@ export class GalleryComponent {
   }
 
   openDialog(): void {
-    if( this.callLightbox && this.ngAfterViewInit() >= 550 ) {
+    if( this.callLightbox && this.width >= 550 ) {
       this.dialog.open(LightboxComponent, {
         data: { gallery: this.gallery },
         panelClass: 'gallery__img--resize'

@@ -1,7 +1,7 @@
 <div class="gallery">
     <img class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
-    <button class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
-    <button class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
+    <button *ngIf="width < 550" class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
+    <button *ngIf="width < 550" class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
     <div class="thumbnails">
         <img *ngFor="let img of gallery; let i = index" class="thumbnail" [class.gallery__image--active]="currentIndex == i" [src]="img.thumb" alt="img" (click)="getImage(i)">
     </div>

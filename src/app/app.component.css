@@ -40,9 +40,13 @@
     /* background: chartreuse; */
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 10px;
+}
 .attribution a { 
-    font-size: 12px;
+    font-size: 11px;
     color: var(--color-orange);
     text-decoration: none;
 }
