@@ -62,6 +62,8 @@ export class GalleryComponent {
     }
   }
 
- 
+ //TAREAS:
+//  1. Cambiar width de thumbnails a % en LightboxComponent
+//  2. Poner una navbar que sea autoadaptable...
 
 }
