@@ -11,6 +11,11 @@ html, body {
     background: var(--color-white);
 }
 
+body {
+    background: chartreuse!important;
+    width: 100%;
+}
+
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */

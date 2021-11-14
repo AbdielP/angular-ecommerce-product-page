@@ -13,9 +13,9 @@
   </mat-sidenav>
 
   <mat-sidenav-content class="sidenav__content">
-    <div class="container">
-      <app-navbar class="navbar" (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
-    </div>
+
+    <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
+
     <div class="grid">
       <div class="gallery">
         <app-gallery [callLightbox]="callLightbox"></app-gallery>
@@ -28,7 +28,3 @@
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<!-- IMPORTANT:
-  - Setted Angular material typography styles
-  - Setted browser animations for Angular Material -->

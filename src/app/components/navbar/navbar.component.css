@@ -1,6 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .toolbar {
+    max-width: var(--max-width);
     height: 70px;
-    background: none;
 }.margin-bottom {
     margin-bottom: 10px;
 }
@@ -27,8 +32,6 @@
     }
 
     .toolbar {
-        /* background-color: red; */
-        max-width: 1000px;
         margin-bottom: 20px;
         border-bottom: 1px solid var(--color-dark-grayish-blue) ;
     }
