@@ -16,6 +16,17 @@
     background: none;
 }
 
+.container {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.navbar {
+    background: red;
+}
+
+
 .sidenav__list {
     list-style-type: none;
     margin-top: 45px;
@@ -53,6 +64,7 @@
 
 
 @media (min-width: 875px) {
+
     .grid {
         grid-template-columns: 1fr 1fr;
     }

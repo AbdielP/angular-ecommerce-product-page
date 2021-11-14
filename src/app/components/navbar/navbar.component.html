@@ -1,10 +1,17 @@
 <mat-toolbar class="toolbar">
-  <button mat-icon-button class="margin-bottom" aria-label="menu"
+  <button mat-icon-button class="sidenav-btn margin-bottom" aria-label="menu"
     (click)="toggleSidenav(toggle = true)">
     <img src="/assets/icon-menu.svg" alt="menu">
   </button>
   <img src="/assets/logo.svg" class="margin-bottom" alt="logo">
   <span class="spacer"></span>
+  <ul class="sidenav__list">
+    <li class="sidenav__list-item">Collections</li>
+    <li class="sidenav__list-item">Men</li>
+    <li class="sidenav__list-item">Women</li>
+    <li class="sidenav__list-item">About</li>
+    <li class="sidenav__list-item">Contact</li>
+  </ul>
   <button mat-icon-button class="toolbar__cart margin-bottom" aria-label="logo">
     <img src="/assets/icon-cart.svg" alt="cart">
   </button>

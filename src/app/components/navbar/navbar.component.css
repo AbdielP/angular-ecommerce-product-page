@@ -1,5 +1,6 @@
 .toolbar {
     height: 70px;
+    background: none;
 }.margin-bottom {
     margin-bottom: 10px;
 }
@@ -13,4 +14,31 @@
 
 .toolbar__cart {
     margin-right: 5px;
+}
+
+.sidenav__list {
+    display: none;
+}
+
+@media (min-width: 780px) { 
+
+    .spacer {
+        display: none;
+    }
+
+    .toolbar {
+        /* background-color: red; */
+        max-width: 1000px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--color-dark-grayish-blue) ;
+    }
+    .sidenav-btn {
+        display: none;
+    }
+
+    .sidenav__list {
+        list-style-type: none;
+        display: flex;
+        /* margin-top: 45px; */
+    }
 }
