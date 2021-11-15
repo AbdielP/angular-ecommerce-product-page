@@ -1,78 +1,74 @@
-@import '../../public/general.css';
+@import "../../public/general.css";
 
 .sidenav__container {
-    height: 100vh;
+  height: 100vh;
 }
 
 .sidenav {
-    padding: 20px;
-    background-color: var(--color-white);
-    color: var(--color-very-dark-blue);
-    width: 250px;
+  padding: 20px;
+  background-color: var(--color-white);
+  color: var(--color-very-dark-blue);
+  width: 250px;
 }
 
 .sidenav__button {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
 
-/* .sidenav__content {
-    background: blueviolet;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.container {
-    background: hotpink;
-    width: 100%;
+.sidenav__content {
+  /* background: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .sidenav__list {
-    list-style-type: none;
-    margin-top: 45px;
+  list-style-type: none;
+  margin-top: 45px;
 }
 
 .sidenav__list-item {
-    margin: 25px 0;
-    font-size: 1.1rem;
-    font-weight: 700;
+  margin: 25px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .gallery {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: chartreuse;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: chartreuse; */
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin-bottom: 10px;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.attribution a { 
-    font-size: 11px;
-    color: var(--color-orange);
-    text-decoration: none;
+.attribution a {
+  font-size: 11px;
+  color: var(--color-orange);
+  text-decoration: none;
 }
-
 
 @media (min-width: 875px) {
+  .container {
+    /* background: hotpink; */
+    max-width: 1200px;
+  }
 
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .gallery {
-        height: 100vh;
-    }
+  .gallery {
+    height: 100vh;
+  }
 }
- 

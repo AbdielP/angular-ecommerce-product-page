@@ -14,17 +14,19 @@
 
   <mat-sidenav-content class="sidenav__content">
 
-    <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
-
-    <div class="grid">
-      <div class="gallery">
-        <app-gallery [callLightbox]="callLightbox"></app-gallery>
+    <div class="container">
+      <!-- mete todo aquí -->
+      <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
+      <div class="grid">
+        <div class="gallery">
+          <app-gallery [callLightbox]="callLightbox"></app-gallery>
+        </div>
+        <app-description></app-description>
       </div>
-      <app-description></app-description>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/AbdielP">AbdielP</a>.
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/AbdielP">AbdielP</a>.
+      </div>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

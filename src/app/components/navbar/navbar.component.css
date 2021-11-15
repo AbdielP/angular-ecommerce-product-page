@@ -4,6 +4,7 @@
 }
 
 .toolbar {
+    background: none;
     max-width: var(--max-width);
     height: 70px;
 }.margin-bottom {
@@ -27,9 +28,9 @@
 
 @media (min-width: 780px) { 
 
-    .spacer {
+    /* .spacer {
         display: none;
-    }
+    } */
 
     .toolbar {
         margin-bottom: 20px;
@@ -40,8 +41,13 @@
     }
 
     .sidenav__list {
-        list-style-type: none;
         display: flex;
-        /* margin-top: 45px; */
+        justify-content: space-around;
+        list-style-type: none;
+        color: var(--color-dark-grayish-blue);
+        width: 400px;
+        /* background-color: tomato; */
+    }.sidenav__list-item {
+        font-size: 14px;
     }
 }
