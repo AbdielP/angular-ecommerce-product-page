@@ -25,6 +25,11 @@
     width: 70%;
 }
 
+:host-context(.test) .thumbnail {
+    width: 20%;
+}
+
+
 @media (min-width: 550px) {
 
     .gallery__img {
@@ -36,7 +41,7 @@
     .thumbnails {
         display: flex;
         justify-content: center;
-        background: green;
+        /* background: green; */
     }
     .thumbnail {
         border-radius: 10px;
