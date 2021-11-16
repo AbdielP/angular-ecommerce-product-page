@@ -50,6 +50,6 @@
     }
 
     .gallery__image--active {
-        border: 2px solid var(--color-orange)
+        border: 2px solid var(--color-orange);
     }
 }
