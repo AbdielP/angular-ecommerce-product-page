@@ -21,16 +21,22 @@
     width: 80%;
 }
 
+:host-context(.thumbnails--resize) .thumbnails {
+    width: 70%;
+}
+
 @media (min-width: 550px) {
 
     .gallery__img {
-        width: 90%;
+        /* width: 90%; */
+        width: 460px;
         border-radius: 15px;
     }
 
     .thumbnails {
         display: flex;
         justify-content: center;
+        background: green;
     }
     .thumbnail {
         border-radius: 10px;
