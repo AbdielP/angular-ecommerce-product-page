@@ -4,8 +4,8 @@
     <button *ngIf="width < 550 || callLightbox===false" class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
     <div class="thumbnails">
         <button *ngFor="let img of gallery; let i = index" class="thumbnail" [class.gallery__image--active]="currentIndex == i" (click)="getImage(i)">
-            <span></span>
-            <img [src]="img.thumb" alt="img" >
+            <!-- <span class="thumbnail__span"></span> -->
+            <img [class.thumbnail__img--active]="currentIndex == i" class="thumbnail__img" [src]="img.thumb" alt="img" >
         </button>
     </div>
 </div>

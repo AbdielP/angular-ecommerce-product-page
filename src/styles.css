@@ -52,10 +52,6 @@ body {
     color: var(--color-very-dark-blue);
 }
 
-.opacity-30 {
-    opacity: .3;
-}
-
 /* #mat-dialog-0 {
     background: none;
     box-shadow: none;

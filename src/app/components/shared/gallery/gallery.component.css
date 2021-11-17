@@ -44,12 +44,25 @@
         /* background: green; */
     }
     .thumbnail {
-        border-radius: 10px;
+        display: flex;
+        border: none;
         width: 90px;
         margin: 15px;
+        background: none;
+        overflow: hidden;
+    }
+
+    .thumbnail__img {
+        width: 100%;
+        border-radius: 10px;
     }
 
     .gallery__image--active {
         border: 2px solid var(--color-orange);
+        border-radius: 15px;
+    }
+    
+    .thumbnail__img--active {
+        opacity: .6;
     }
 }
