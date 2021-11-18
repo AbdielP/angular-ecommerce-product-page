@@ -15,12 +15,12 @@
   <mat-sidenav-content class="sidenav__content">
 
     <div class="container">
-      <app-navbar (toggle_sidenav)="toggleSidenav($event)"></app-navbar>
+      <app-navbar (toggle_sidenav)="toggleSidenav($event)" [cartSize]="eventCart.asObservable()"></app-navbar>
       <div class="grid">
         <div class="gallery">
           <app-gallery [callLightbox]="callLightbox"></app-gallery>
         </div>
-        <app-description></app-description>
+        <app-description (cart)="cartLenght($event)"></app-description>
       </div>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -13,11 +13,11 @@
         </div>
         <div class="cart-container display-flex">
             <div class="container__div display-flex">
-                <button class="cart-container__btn cart-container__btn-minus cursor-pointer"></button>
-                <div class="cart-container__btn cart-container__div">0</div>
-                <button class="cart-container__btn cart-container__btn-plus cursor-pointer"></button>
+                <button class="cart-container__btn cart-container__btn-minus cursor-pointer" (click)="decreaseCounter()"></button>
+                <div class="cart-container__btn cart-container__div">{{counter}}</div>
+                <button class="cart-container__btn cart-container__btn-plus cursor-pointer" (click)="increaseCounter()"></button>
             </div>
-            <button class="cart-button display-flex cursor-pointer">
+            <button class="cart-button display-flex cursor-pointer" (click)="addToCart()">
                 <img class="cart-button__img" src="/assets/icon-cart-white.svg" alt="cart">
                 Add to cart
             </button>
