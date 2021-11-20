@@ -62,6 +62,11 @@ mat-dialog-container.mat-dialog-container {
     box-shadow: none;
 }
 
+.mat-menu-panel.menu { 
+    background: red;
+    width: 400px; 
+}
+
 /* .cdk-overlay-dark-backdrop {
     display: none;
     background: none!important;

@@ -13,13 +13,18 @@
       <li class="sidenav__list-item">Contact</li>
     </ul>
     <span class="spacer"></span>
-    <button mat-icon-button class="toolbar__cart margin-bottom" aria-label="logo">
+    <button mat-icon-button class="toolbar__cart margin-bottom" aria-label="logo" [matMenuTriggerFor]="menu" #menuTrigger>
       <span>{{cart}}</span>
       <img class="img__cart" src="/assets/icon-cart.svg" alt="cart">
     </button>
     <button mat-icon-button class="margin-bottom" aria-label="avatar">
       <img class="img__avatar" src="/assets/image-avatar.png" alt="avatar">
     </button>
+
+    <mat-menu #menu="matMenu" class="menu">
+      <app-cart></app-cart>
+    </mat-menu>
+
   </mat-toolbar>
   <hr class="toolbar__hr">
 </div>

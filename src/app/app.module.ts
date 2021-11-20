@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { GalleryComponent } from './components/shared/gallery/gallery.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LightboxComponent } from './components/lightbox/lightbox.component';
     NavbarComponent,
     GalleryComponent,
     DescriptionComponent,
-    LightboxComponent
+    LightboxComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
