@@ -31,11 +31,6 @@
     display: none;
 }
 
-.mat-menu-panel.menu { 
-    background: red;
-    width: 400px; 
-}
-
 @media (min-width: 780px) { 
 
     .container {

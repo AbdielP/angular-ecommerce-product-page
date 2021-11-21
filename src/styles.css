@@ -12,7 +12,6 @@ html, body {
 }
 
 body {
-    background: chartreuse!important;
     width: 100%;
 }
 
@@ -63,8 +62,9 @@ mat-dialog-container.mat-dialog-container {
 }
 
 .mat-menu-panel.menu { 
-    background: red;
-    width: 400px; 
+    width: 375px; 
+    max-width: 375px; 
+    height: 290px;
 }
 
 /* .cdk-overlay-dark-backdrop {
