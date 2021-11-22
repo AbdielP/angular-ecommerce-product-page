@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -8,8 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CartComponent implements OnInit {
 
   @Input() cartItems: number = 0;
-  total: number;
-
+  @Output() cartEvent = new EventEmitter<number>();
+  total: number = 0;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class CartComponent implements OnInit {
 
   clearCart(): void {
     this.cartItems = 0;
+    this.cartEvent.emit(this.cartItems);
     // Emit to parent when cart is clear
     // Menu should keep showing itself when click inside it.
   }

@@ -31,9 +31,14 @@ export class NavbarComponent implements OnInit {
     this.toggle_sidenav.emit(toggle);
   }
 
+  resetCart(cart: number): void {
+    // console.log(cart);
+    this.cart = cart;
+  }
+
   private subscribeCartSize(): void {
     this.eventSubscription = this.cartSize.subscribe((cart: number) => {
-      console.log(cart);
+      // console.log(cart);
       this.cart = cart;
     })
   }

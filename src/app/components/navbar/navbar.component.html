@@ -22,7 +22,7 @@
     </button>
 
     <mat-menu #menu="matMenu" class="menu">
-      <app-cart [cartItems]="cart"></app-cart>
+      <app-cart [cartItems]="cart" (cartEvent)="resetCart($event)"></app-cart>
     </mat-menu>
 
   </mat-toolbar>
