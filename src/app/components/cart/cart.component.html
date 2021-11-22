@@ -2,17 +2,17 @@
     <div class="title__div">
         <h3>Cart</h3>
     </div>
-    <!-- <div class="empty-cart-container display-flex">
+    <div *ngIf="cartItems === 0" class="empty-cart-container display-flex">
         <h3 class="empty-cart-container__h3">Your cart is empty.</h3>
-    </div> -->
-    <div class="cart-container">
+    </div>
+    <div *ngIf="cartItems !== 0" class="cart-container">
         <div class="cart-container__div display-flex">
             <img class="img" src="/assets/image-product-1-thumbnail.jpg" alt="img">
             <div class="cart-container__details display-flex">
                 <p class="paragraph">Fall Limited Edition Sneakers</p>
-                <p class="paragraph">$125.00 x 0 <strong class="paragraph__strong">$0.00</strong></p>
+                <p class="paragraph">$125.00 x {{cartItems}} <strong class="paragraph__strong">${{cartTotal() | number : '1.2-2'}}</strong></p>
             </div>
-            <button type="button" class="delete__button cursor-pointer">
+            <button type="button" class="delete__button cursor-pointer" (click)="clearCart()">
                 <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
