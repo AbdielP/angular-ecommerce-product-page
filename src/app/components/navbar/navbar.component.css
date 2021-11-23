@@ -20,7 +20,9 @@
 }
 
 .toolbar__cart {
+    position: relative;
     margin-right: 5px;
+    /* background: red; */
 }
 
 .sidenav__list {
@@ -31,16 +33,32 @@
     display: none;
 }
 
+.div__span {
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    background: var(--color-orange);
+    width: 20px;
+    height: 14px;
+    padding: 5px 3px;
+    justify-content: center;
+
+    border-radius: 30px;
+}
+
+.span {
+    align-self: center;
+    font-size: 10px;
+    /* font-weight: 700; */
+    color: var(--color-white);
+
+}
+
 @media (min-width: 780px) { 
 
     .container {
         padding: 5px;
     }
-
-    /* .toolbar { */
-        /* margin-bottom: 20px; */
-        /* border-bottom: 1px solid var(--color-dark-grayish-blue) ; */
-    /* } */
 
     .sidenav-btn {
         display: none;
@@ -53,13 +71,12 @@
         list-style-type: none;
         color: var(--color-dark-grayish-blue);
         width: 400px;
-        /* background-color: tomato; */
     }.sidenav__list-item {
         font-size: 14px;
     }
 
     .img__cart {
-        width: 18px;
+        width: 20px;
     }
 
     .img__avatar {
@@ -72,6 +89,5 @@
         align-self: center;
         width: 97%;
         opacity: .2;
-        /* border: .5px solid var(--color-dark-grayish-blue) ; */
     }
 }

@@ -32,8 +32,9 @@ export class NavbarComponent implements OnInit {
   }
 
   resetCart(cart: number): void {
-    // console.log(cart);
+    console.log(cart);
     this.cart = cart;
+    console.log(this.cart)
   }
 
   private subscribeCartSize(): void {
