@@ -54,8 +54,9 @@
 
 @media (min-width: 780px) { 
 
-    .container {
-        padding: 5px;
+    .toolbar {
+        height: 100px;
+        /* background: red; */
     }
 
     .sidenav-btn {
@@ -63,14 +64,23 @@
     }
 
     .sidenav__list {
-        margin: 0 0 10px 10px;
+        /* margin: 0 0 10px 10px;  */
+        margin-left: 40px;
+        height: 100%;
         display: flex;
         justify-content: space-around;
+        align-items: flex-end;
         list-style-type: none;
         color: var(--color-dark-grayish-blue);
         width: 400px;
     }.sidenav__list-item {
         font-size: 14px;
+        /* background: blueviolet; */
+        height: 70%;
+    }
+
+    .toolbar__cart {   
+        margin-right: 35px;
     }
 
     .img__cart {
@@ -78,14 +88,13 @@
     }
 
     .img__avatar {
-        width: 35px;
+        width: 45px;
     }
 
     .toolbar__hr {
         display: inline;
-        margin-top: 5px;
         align-self: center;
-        width: 97%;
+        width: 98%;
         opacity: .2;
     }
 }

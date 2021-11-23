@@ -51,10 +51,10 @@ body {
     color: var(--color-very-dark-blue);
 }
 
-/* #mat-dialog-0 {
-    background: none;
-    box-shadow: none;
-} */
+.sidenav__list-item:hover {
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-orange);
+}
 
 mat-dialog-container.mat-dialog-container {
     background: none;
