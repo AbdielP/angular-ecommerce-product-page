@@ -1,6 +1,7 @@
 import { Observable, Subscription } from 'rxjs';
 import { Component, Output, EventEmitter, Input, OnInit, ViewChild } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material/menu';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -17,7 +18,7 @@ export class NavbarComponent implements OnInit {
   toggle: boolean = false;
   cart: number = 0;
 
-  constructor() {}
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
     this.subscribeCartSize();
@@ -32,14 +33,13 @@ export class NavbarComponent implements OnInit {
   }
 
   resetCart(cart: number): void {
-    console.log(cart);
+    // console.log(cart);
+    this.cartService.resetCart();
     this.cart = cart;
-    console.log(this.cart)
   }
 
-  private subscribeCartSize(): void {
+  subscribeCartSize(): void {
     this.eventSubscription = this.cartSize.subscribe((cart: number) => {
-      // console.log(cart);
       this.cart = cart;
     })
   }

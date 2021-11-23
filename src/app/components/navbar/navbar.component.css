@@ -22,7 +22,6 @@
 .toolbar__cart {
     position: relative;
     margin-right: 5px;
-    /* background: red; */
 }
 
 .sidenav__list {
@@ -49,7 +48,6 @@
 .span {
     align-self: center;
     font-size: 10px;
-    /* font-weight: 700; */
     color: var(--color-white);
 
 }

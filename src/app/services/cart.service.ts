@@ -26,4 +26,8 @@ export class CartService {
     return this.cart;
   }
 
+  resetCart(): void {
+    this.cart = 0;
+  }
+
 }

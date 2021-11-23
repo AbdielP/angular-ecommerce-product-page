@@ -15,7 +15,7 @@
     <span class="spacer"></span>
     <button mat-icon-button class="toolbar__cart margin-bottom" aria-label="logo" [matMenuTriggerFor]="menu" #menuTrigger>
       <div *ngIf="cart !== 0" class="div__span display-flex">
-        <span class="span" matBadge="15" matBadgeColor="warn">{{cart}}</span>
+        <span class="span">{{cart}}</span>
       </div>
       <img class="img__cart" src="/assets/icon-cart.svg" alt="cart">
     </button>
