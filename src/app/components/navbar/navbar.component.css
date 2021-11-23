@@ -14,10 +14,22 @@
 .spacer {
     flex: 1 1 auto;
 }
-
 .img__avatar {
     width: 24px;
 }
+
+/* .button__avatar {
+    box-sizing: content-box!important;
+    -moz-box-sizing: content-box!important;
+    -webkit-box-sizing: content-box!important;
+} */
+
+
+.img__avatar:hover {
+    border-radius: 50%;
+    outline: 2px solid var(--color-orange);
+}
+
 
 .toolbar__cart {
     position: relative;
@@ -31,7 +43,6 @@
 .toolbar__hr {
     display: none;
 }
-
 .div__span {
     position: absolute;
     left: 50%;
@@ -56,6 +67,7 @@
 
     .toolbar {
         height: 100px;
+        margin-top: 10px;
     }
 
     .sidenav-btn {

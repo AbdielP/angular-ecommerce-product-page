@@ -52,7 +52,7 @@ body {
 }
 
 .sidenav__list-item:hover {
-    font-weight: 700;
+    color: var(--color-very-dark-blue);
     border-bottom: 3px solid var(--color-orange);
 }
 
