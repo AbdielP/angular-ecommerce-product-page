@@ -64,6 +64,12 @@
 }
 
 @media (min-width: 875px) {
+
+  .gallery {
+    padding-left: 20px;
+    /* background-color: rebeccapurple; */
+  }
+
   .container {
     /* background: hotpink; */
     max-width: 1125px;
