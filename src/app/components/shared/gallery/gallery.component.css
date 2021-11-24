@@ -55,6 +55,8 @@
     .thumbnail__img {
         width: 100%;
         border-radius: 10px;
+    }.thumbnail__img:hover {
+        opacity: .6;
     }
 
     .gallery__image--active {
