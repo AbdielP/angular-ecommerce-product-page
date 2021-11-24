@@ -27,6 +27,8 @@
 .toolbar__cart {
     position: relative;
     margin-right: 5px;
+}.toolbar__cart:hover {
+    opacity: .6;
 }
 
 .sidenav__list {

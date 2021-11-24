@@ -19,6 +19,7 @@
 
 :host-context(.gallery__img--resize) .gallery__img {
     width: 80%;
+    cursor: auto;
 }
 
 :host-context(.thumbnails--resize) .thumbnails {
