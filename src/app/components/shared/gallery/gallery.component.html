@@ -1,11 +1,11 @@
 <div class="gallery">
     <img class="gallery__img" [src]="currentImage" alt="sneakers" (click)="openDialog()">
-    <button *ngIf="width < 550 || callLightbox===false" class="gallery__button gallery__button--left" type="button" (click)="galleryBackward()"></button>
-    <button *ngIf="width < 550 || callLightbox===false" class="gallery__button gallery__button--right" type="button" (click)="galleryForward()"></button>
+    <button *ngIf="width < 550 || callLightbox===false" class="gallery__button gallery__button--left cursor-pointer" type="button" (click)="galleryBackward()"></button>
+    <button *ngIf="width < 550 || callLightbox===false" class="gallery__button gallery__button--right cursor-pointer" type="button" (click)="galleryForward()"></button>
     <div class="thumbnails">
         <button *ngFor="let img of gallery; let i = index" class="thumbnail" [class.gallery__image--active]="currentIndex == i" (click)="getImage(i)">
             <!-- <span class="thumbnail__span"></span> -->
-            <img [class.thumbnail__img--active]="currentIndex == i" class="thumbnail__img" [src]="img.thumb" alt="img" >
+            <img [class.thumbnail__img--active]="currentIndex == i" class="thumbnail__img cursor-pointer" [src]="img.thumb" alt="img" >
         </button>
     </div>
 </div>

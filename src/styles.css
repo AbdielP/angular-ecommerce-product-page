@@ -51,6 +51,7 @@ body {
     color: var(--color-very-dark-blue);
 }
 
+
 .sidenav__list-item:hover {
     color: var(--color-very-dark-blue);
     border-bottom: 3px solid var(--color-orange);

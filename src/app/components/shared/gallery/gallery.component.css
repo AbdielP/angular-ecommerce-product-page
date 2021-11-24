@@ -19,6 +19,7 @@
 
 :host-context(.gallery__img--resize) .gallery__img {
     width: 80%;
+    cursor: auto;
 }
 
 :host-context(.thumbnails--resize) .thumbnails {
@@ -33,9 +34,10 @@
 @media (min-width: 550px) {
 
     .gallery__img {
-        /* width: 90%; */
-        width: 460px;
+        /* width: 460px; */
+        width: 450px;
         border-radius: 15px;
+        cursor: pointer;
     }
 
     .thumbnails {
@@ -55,6 +57,8 @@
     .thumbnail__img {
         width: 100%;
         border-radius: 10px;
+    }.thumbnail__img:hover {
+        opacity: .6;
     }
 
     .gallery__image--active {
