@@ -24,7 +24,6 @@ export class CartComponent implements OnInit {
     this.cartItems = 0;
     this.cartEvent.emit(this.cartItems);
     // Emit to parent when cart is clear
-    // Menu should keep showing itself when click inside it.
   }
 
 }

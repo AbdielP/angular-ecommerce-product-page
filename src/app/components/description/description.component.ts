@@ -24,7 +24,6 @@ export class DescriptionComponent {
   addToCart(): void {
     if (this.counter > 0) {
       this.cartService.addToCart(this.counter);
-      // El prolblema se emite aquí...
       this.cart.emit(this.cartService.getCart());
       this.counter = 0;
     } 

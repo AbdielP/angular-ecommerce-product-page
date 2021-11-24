@@ -23,7 +23,7 @@
       <img class="img__avatar" src="/assets/image-avatar.png" alt="avatar">
     </button>
 
-    <mat-menu #menu="matMenu" class="menu">
+    <mat-menu #menu="matMenu" [hasBackdrop]="false" class="menu">
       <app-cart [cartItems]="cart" (cartEvent)="resetCart($event)"></app-cart>
     </mat-menu>
 

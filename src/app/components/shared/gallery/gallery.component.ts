@@ -57,7 +57,8 @@ export class GalleryComponent {
     if( this.callLightbox && this.width >= 550 ) {
       this.dialog.open(LightboxComponent, {
         data: { gallery: this.gallery },
-        panelClass: ['gallery__img--resize', 'thumbnails--resize', 'test']
+        panelClass: ['gallery__img--resize', 'thumbnails--resize', 'thumbnail-width', 'gallery__button--top', 
+        'button--left', 'button--right']
       });
     }
   }

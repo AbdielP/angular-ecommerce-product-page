@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     padding: 20px 25px;
-    /* background: red; */
     width: 100%;
 }
 
 .container {
-    /* background: gray; */
     max-width: 550px;
 }
 
@@ -62,7 +60,6 @@
 
 .cart-container {
     flex-direction: column;
-    /* background: red; */
 }
 
 .container__div {
@@ -79,7 +76,6 @@
     padding: 16px 25px;
     background-repeat: no-repeat;
     background-position: center;
-    /* margin: 25px 0 18px 0; */
 }.cart-container__btn-minus {
     width: 10%;
     border-radius: 8px 0 0 8px;
@@ -120,14 +116,7 @@
 
 @media (min-width: 875px) { 
 
-    /* .main {
-        min-width: 400px;
-        width: 100%;
-    } */
-
     .container {
-        /* background: gray; */
-        /* max-width: 900px; */
         max-width: 450px;
         margin-top: 120px;
     }

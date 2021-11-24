@@ -1,21 +1,14 @@
 .container {
-    /* height: 100vh; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .container__actions {
-    width: 80%;
-    /* background-color: tomato; */
+    width: 98%;
 }
 
 .btn-close {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-/* @media (min-width: 550px) {
-    .container {
-        display: flex;
-    }
-} */
