@@ -37,6 +37,7 @@
         /* width: 460px; */
         width: 450px;
         border-radius: 15px;
+        cursor: pointer;
     }
 
     .thumbnails {
