@@ -2,9 +2,9 @@
 
   <mat-toolbar class="toolbar">
     <button mat-icon-button class="sidenav-btn margin-bottom" aria-label="menu" (click)="toggleSidenav(toggle = true)">
-      <img src="/assets/icon-menu.svg" alt="menu">
+      <img src="assets/icon-menu.svg" alt="menu">
     </button>
-    <img src="/assets/logo.svg" class="margin-bottom" alt="logo">
+    <img src="assets/logo.svg" class="margin-bottom" alt="logo">
     <ul class="sidenav__list">
       <li class="sidenav__list-item cursor-pointer">Collections</li>
       <li class="sidenav__list-item cursor-pointer">Men</li>
@@ -17,10 +17,10 @@
       <div *ngIf="cart !== 0" class="div__span display-flex">
         <span class="span">{{cart}}</span>
       </div>
-      <img class="img__cart" src="/assets/icon-cart.svg" alt="cart">
+      <img class="img__cart" src="assets/icon-cart.svg" alt="cart">
     </button>
     <button mat-icon-button class="button__avatar margin-bottom" aria-label="avatar">
-      <img class="img__avatar" src="/assets/image-avatar.png" alt="avatar">
+      <img class="img__avatar" src="assets/image-avatar.png" alt="avatar">
     </button>
 
     <mat-menu #menu="matMenu" [hasBackdrop]="false" class="menu">
