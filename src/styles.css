@@ -58,6 +58,9 @@ body {
 }
 
 mat-dialog-container.mat-dialog-container {
+    /* margin: 0; */
+    padding: 0;
+    height: 100%;
     background: none;
     box-shadow: none;
 }
