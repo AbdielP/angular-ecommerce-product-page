@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/angular-ecommerce-product-page-hVoSVtN4L)
-- Live Site URL: [Add live site URL here](https://abdielp.github.io/angular-ecommerce-product-page/)
+- Solution URL: [https://www.frontendmentor.io/solutions/angular-ecommerce-product-page-hVoSVtN4L](https://www.frontendmentor.io/solutions/angular-ecommerce-product-page-hVoSVtN4L)
+- Live Site URL: [https://abdielp.github.io/angular-ecommerce-product-page/](https://abdielp.github.io/angular-ecommerce-product-page/)
 
 ## My process
 
