@@ -80,7 +80,7 @@ Also sharing data between component using Input() and Output() decorators.
 
 3. Angular Material has been used to display the lightbox, cart and sidenav.
 
-![](./src/assets/captures/desktop.png)
+![](./src/assets/captures/lightbox.png)
 
 4. Mobile design use same gallery shared component.
 
