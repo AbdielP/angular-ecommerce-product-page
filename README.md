@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./captures/desktop.png)
+![](./src/assets/captures/desktop.png)
 
 ### Links
 
@@ -80,11 +80,11 @@ Also sharing data between component using Input() and Output() decorators.
 
 3. Angular Material has been used to display the lightbox, cart and sidenav.
 
-![](./captures/desktop.png)
+![](./src/assets/captures/desktop.png)
 
 4. Mobile design use same gallery shared component.
 
-![](./captures/mobile.png)
+![](./src/assets/captures/mobile.png)
 
 ## Author
 
