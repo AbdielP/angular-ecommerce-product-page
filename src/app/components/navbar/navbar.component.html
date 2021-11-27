@@ -13,13 +13,13 @@
       <li class="sidenav__list-item cursor-pointer">Contact</li>
     </ul>
     <span class="spacer"></span>
-    <button mat-icon-button class="toolbar__cart margin-bottom" aria-label="logo" [matMenuTriggerFor]="menu" #menuTrigger>
+    <button mat-icon-button class="toolbar__cart margin-bottom" name="logo" aria-label="logo" [matMenuTriggerFor]="menu" #menuTrigger>
       <div *ngIf="cart !== 0" class="div__span display-flex">
         <span class="span">{{cart}}</span>
       </div>
       <img class="img__cart" src="assets/icon-cart.svg" alt="cart">
     </button>
-    <button mat-icon-button class="button__avatar margin-bottom" aria-label="avatar">
+    <button mat-icon-button class="button__avatar margin-bottom" name="avatar" aria-label="avatar">
       <img class="img__avatar" src="assets/image-avatar.png" alt="avatar">
     </button>
 
